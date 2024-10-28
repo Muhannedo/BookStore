@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>all Books</title>
-</head>
-<body>
-    <h1>List of all Books </h1>
+  </head>
+  <body>
+    <h1>List of all Books</h1>
     <a href="/books/new">Add new Book</a>
-     
-</body>
+
+    <div class="card-container">
+      <% books.forEach((book)=> { %>
+      <a href="/books/<%= book._id %>">
+        <h4><%= book.title %> <span> by <%= book.author %></span></h4>
+      </a>
+      <% }) %>
+    </div>
+  </body>
 </html>
