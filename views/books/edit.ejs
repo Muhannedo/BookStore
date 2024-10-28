@@ -18,7 +18,7 @@
         value="<%= book.category %>"
       />
       <label for="price">Price</label>
-      <input type="number" name="price" id="price" value="<%= book.price %>" />
+      <input type="number" name="price" id="price" value="<%= book.price %>"  maxlength="19" minlength="1"/>
       <label for="description">Description</label>
       <textarea name="description" id="description" cols="30" rows="10">
 <%= book.description %></textarea
