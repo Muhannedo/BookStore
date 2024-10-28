@@ -7,14 +7,19 @@
 </head>
 <body>
     <%- include('../partials/_navbar.ejs') %>
-
+    
 
     <h1><%= book.title %></h1>
     <p><strong>Author:</strong> <%= book.author %></p>
     <p><strong>category:</strong> <%= book.category %></p>
+    <p><strong>price:</strong> <%= book.price %> $</p>
     <p><strong>Published:</strong> <%= book.publishedYear %></p>
     <p><strong>description:</strong> <%= book.description %></p>
+        <% if (book.owner._id.equals(user._id)) { %>
     <a href="/books/<%= book._id %>/edit">Edit</a>
-    
+    <form action="/books/<%= book._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete</button>
+        <% } else { %>
+            <%}%>
 </body>
 </html>
