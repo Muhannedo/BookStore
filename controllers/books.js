@@ -41,7 +41,37 @@ router.get('/:bookId/edit', async (req, res) => {
     res.redirect('/');
   }
 });
+// router.put('/:listingId', async (req, res) => {
+//   try {
+//     const currentListing = await Listing.findById(req.params.listingId);
+//     if (currentListing.owner.equals(req.session.user._id)) {
+//       await currentListing.updateOne(req.body);
+//       res.redirect('/listings');
+//     } else {
+//       res.send("You don't have permission to do that.");
+//     }
+//   } catch (error) {
+//     console.log(error);
+//     res.redirect('/');
+//   }
+// });
+//update
+router.put('/:bookId', async (req, res) => {
+  try{
+    const currentBook = await Book.findById(req.params.bookId);
+    if (currentBook.owner.equals(req.session.user._id)){
+      await currentBook.updateOne(req.body);
+      res.redirect('/books');
+    }
+    else{
+      res.send("You don't have permission to do that.");
+    }
+  }catch(error){
+    console.log(error);
+    res.redirect('/');
+  }
 
+});
 
 
 
