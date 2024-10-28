@@ -1,0 +1,21 @@
+<nav>
+    <% if(user) { %>
+        <h1>BookStore</h1>
+      </div>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/books">View all Listings</a>
+        <a href="/auth/sign-out">Sign Out</a>
+      </div>
+    </div>
+  
+    <% } else { %>
+        <h1>BookStore</h1>
+      </div>
+      <div class="auth-links">
+        <a href="/auth/sign-up">Sign Up</a>
+        <a href="/auth/sign-in">Sign In</a>
+      </div>
+    </div>
+    <% } %>
+  </nav>

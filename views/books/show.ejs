@@ -6,6 +6,9 @@
     <title><%= book.title%></title>
 </head>
 <body>
+    <%- include('../partials/_navbar.ejs') %>
+
+
     <h1><%= book.title %></h1>
     <p><strong>Author:</strong> <%= book.author %></p>
     <p><strong>category:</strong> <%= book.category %></p>

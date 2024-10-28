@@ -1,79 +1,78 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
-const User = require('../models/user');
-const Book = require('../models/book');
+const User = require("../models/user");
+const Book = require("../models/book");
 
 // Index
-router.get('/', async (req, res) => {
-  const books = await Book.find({}).populate('owner');
-  res.render('books/index.ejs', { books });
+router.get("/", async (req, res) => {
+  const books = await Book.find({}).populate("owner");
+  res.render("books/index.ejs", { books });
   // res.render('books/index.ejs');
-
 });
-//new 
-router.get('/new', async (req, res) => {
-  res.render('books/new.ejs');
+//new
+router.get("/new", async (req, res) => {
+  res.render("books/new.ejs");
 });
 //create
- router.post('/', async (req, res) => {
-  req.body.owner= req.session.user._id;
+router.post("/", async (req, res) => {
+  req.body.owner = req.session.user._id;
   await Book.create(req.body);
-  res.redirect('/books');
+  res.redirect("/books");
 });
 //show
-router.get('/:bookId', async (req , res)=>{
+router.get("/:bookId", async (req, res) => {
   const book = await Book.findById(req.params.bookId);
-  
-  res.render('books/show.ejs', {book});
+
+  res.render("books/show.ejs", { book });
 });
 
 //edit
 // controller to edit the listing
-router.get('/:bookId/edit', async (req, res) => {
+router.get("/:bookId/edit", async (req, res) => {
   try {
     const currentBook = await Book.findById(req.params.bookId);
-    res.render('books/edit.ejs', {
+    res.render("books/edit.ejs", {
       book: currentBook,
     });
   } catch (error) {
     console.log(error);
-    res.redirect('/');
+    res.redirect("/");
   }
 });
-// router.put('/:listingId', async (req, res) => {
-//   try {
-//     const currentListing = await Listing.findById(req.params.listingId);
-//     if (currentListing.owner.equals(req.session.user._id)) {
-//       await currentListing.updateOne(req.body);
-//       res.redirect('/listings');
-//     } else {
-//       res.send("You don't have permission to do that.");
-//     }
-//   } catch (error) {
-//     console.log(error);
-//     res.redirect('/');
-//   }
-// });
+
 //update
-router.put('/:bookId', async (req, res) => {
-  try{
+router.put("/:bookId", async (req, res) => {
+  try {
     const currentBook = await Book.findById(req.params.bookId);
-    if (currentBook.owner.equals(req.session.user._id)){
+    if (currentBook.owner.equals(req.session.user._id)) {
       await currentBook.updateOne(req.body);
-      res.redirect('/books');
+      res.redirect("/books");
+    } else {
+      res.send("You don't have permission to do that.");
+    }
+  } catch (error) {
+    console.log(error);
+    res.redirect("/");
+  }
+});
+
+//delete
+router.delete("/:bookId", async (req, res) => {
+  try {
+    const book = await Book.findById(req.params.bookId);
+    if (book.owner.equals(req.session.user._id)) {
+      await book.deleteOne();
+      res.redirect("/books");
     }
     else{
       res.send("You don't have permission to do that.");
     }
-  }catch(error){
-    console.log(error);
-    res.redirect('/');
+  } catch (error) {
+    console.error(error);
+    res.redirect("/");
   }
 
 });
-
-
-
 
 module.exports = router;
