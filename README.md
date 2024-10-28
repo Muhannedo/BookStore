@@ -6,7 +6,7 @@
 
 
 # ERD & Data Entity Fields
-<img src="/Planning/ERD.png">
+<img src="planning/ERD.png">
 
 # User Stories 
 - As a new user, I want to easily create a new account, so I can access personalized features and services on the platform.
@@ -28,7 +28,7 @@
 
 # MarkUp
 
-<img src="/Planning/marckup.png">
+<img src="planning/marckup.png">
 
 
 
