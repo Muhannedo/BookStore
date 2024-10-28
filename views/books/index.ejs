@@ -12,7 +12,7 @@
     <div class="card-container">
       <% books.forEach((book)=> { %>
       <a href="/books/<%= book._id %>">
-        <h4><%= book.title %> <span> by <%= book.author %></span></h4>
+        <h4><%= book.title %> <span> by <%= book.owner.username %></span></h4>
       </a>
       <% }) %>
     </div>

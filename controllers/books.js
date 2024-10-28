@@ -6,7 +6,7 @@ const Book = require('../models/book');
 
 // Index
 router.get('/', async (req, res) => {
-  const books = await Book.find({});
+  const books = await Book.find({}).populate('owner');
   res.render('books/index.ejs', { books });
   // res.render('books/index.ejs');
 
@@ -21,7 +21,26 @@ router.get('/new', async (req, res) => {
   await Book.create(req.body);
   res.redirect('/books');
 });
+//show
+router.get('/:bookId', async (req , res)=>{
+  const book = await Book.findById(req.params.bookId);
+  
+  res.render('books/show.ejs', {book});
+});
 
+//edit
+// controller to edit the listing
+router.get('/:bookId/edit', async (req, res) => {
+  try {
+    const currentBook = await Book.findById(req.params.bookId);
+    res.render('books/edit.ejs', {
+      book: currentBook,
+    });
+  } catch (error) {
+    console.log(error);
+    res.redirect('/');
+  }
+});
 
 
 

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= book.title%></title>
+</head>
+<body>
+    <h1><%= book.title %></h1>
+    <p><strong>Author:</strong> <%= book.author %></p>
+    <p><strong>category:</strong> <%= book.category %></p>
+    <p><strong>Published:</strong> <%= book.publishedYear %></p>
+    <p><strong>description:</strong> <%= book.description %></p>
+    <a href="/books/<%= book._id %>/edit">Edit</a>
+    
+</body>
+</html>
