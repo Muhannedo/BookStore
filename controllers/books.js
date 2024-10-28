@@ -23,7 +23,7 @@ router.post("/", async (req, res) => {
   res.redirect("/books");
   }
   else {
-    res.redirect('/books')
+  
   }
 });
 

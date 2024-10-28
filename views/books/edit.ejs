@@ -1,31 +1,32 @@
-<!-- views/listings/edit.ejs -->
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-
+<%- include('../partials/_header.ejs') %>
     <title>Edit <%= book.title %></title>
   </head>
-    <body>
+  <body>
     <%- include('../partials/_navbar.ejs') %>
 
-        <h1>Edit <%= book.title %></h1>
-        <form action="/books/<%= book._id %>?_method=PUT" method="POST">
-        <label for="title">Title</label>
-        <input type="text" name="title" id="title" value="<%= book.title %>" />
-        <label for="author">Author</label>
-        <input type="text" name="author" id="author" value="<%= book.author %>" />
-        <label for="category">Category</label>
-        <input type="text" name="category" id="category" value="<%= book.category %>" />
-        <label for="price">Price</label>
-        <input type="number" name="price" id="price" value="<%= book.price %>" />
-        <label for="description">Description</label>
-        <textarea name="description" id="description" cols="30" rows="10"><%= book.description %></textarea>
-        <button type="submit">Save</button>
-        </form>
-  
+    <h1>Edit <%= book.title %></h1>
+    <form action="/books/<%= book._id %>?_method=PUT" method="POST">
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title" value="<%= book.title %>" />
+      <label for="author">Author</label>
+      <input type="text" name="author" id="author" value="<%= book.author %>" />
+      <label for="category">Category</label>
+      <input
+        type="text"
+        name="category"
+        id="category"
+        value="<%= book.category %>"
+      />
+      <label for="price">Price</label>
+      <input type="number" name="price" id="price" value="<%= book.price %>" />
+      <label for="description">Description</label>
+      <textarea name="description" id="description" cols="30" rows="10">
+<%= book.description %></textarea
+      >
+      <button type="submit">Save</button>
+    </form>
+  </body>
+  <footer>
+    <%- include('../partials/_footer.ejs') %>
+  </footer>
 </html>
-  
