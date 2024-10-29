@@ -1,4 +1,20 @@
 /* From Uiverse.io by Yaya12085 */ 
+*{
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-content: center;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: rgba(17, 24, 39, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 .form-container {
   width: 320px;
   border-radius: 0.75rem;
@@ -47,9 +63,20 @@
 }
 
 
-.signup {
+.signIN {
+  margin-top: 1rem;
+
+  display: flex;
+  align-items: center;
   text-align: center;
   font-size: 0.75rem;
   line-height: 1rem;
-  color: rgba(156, 163, 175, 1);
+  color: rgb(253, 7, 48);
+  border-radius: 15px;
+  padding: 0.75rem 1rem;
+  background-color: rgb(51, 60, 78);
+  
+}
+.signIN:hover {
+  box-shadow: 20px 20px 60px #FFFFFF, -20px -20px 60px #FFFFFF;
 }
