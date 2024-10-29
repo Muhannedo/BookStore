@@ -27,8 +27,26 @@
 - the user can't  delete or modify other books
 
 # MarkUp
-
 <img src="planning/marckup.png">
+
+# OverView
+- landing page for non registered user
+<img src="planning/ReadmeFiles/landing/landing-page-NR.png">
+
+- landing page for registered user
+<img src="planning/ReadmeFiles/landing/landing-page-R.png">
+
+- sign in page 
+
+<img src="planning/ReadmeFiles/landing/login.png">
+
+- index page 
+<img src ="planning/ReadmeFiles/landing/indexx.png">
+
+- add new book
+<img src ="planning/ReadmeFiles/landing/addNew.png">
+
+
 
 # Routes Used
 - index route 
