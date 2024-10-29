@@ -1,17 +1,13 @@
 <!-- views/index.ejs -->
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+<%- include('./partials/_header.ejs') %>
     <title>Home Page</title>
+    <link rel="stylesheet" href="/stylesheets/homePage.css">
+
   </head>
   <body>
     <%- include('./partials/_navbar.ejs') %>
 
-    <h1>Welcome to the app, <%= user.username%>.<span><marquee class="imageGif" direction="down"
+    <h1>Welcome to the app, <%= user ? user.username : 'Guest' %><span><marquee class="imageGif" direction="down"
     width="42"
     height="42"
     behavior="alternate"
