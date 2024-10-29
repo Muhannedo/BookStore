@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgba(17, 24, 39, 1);
+    /* background-color: rgba(17, 24, 39, 1); */
+    background-color:rgb(253, 244, 232);
+
     margin-bottom: 100px;
     margin-top: 120px;
     padding: 0;
@@ -8,16 +10,14 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-    color: #ebe8e8;
+    color: #9e06f6;
+    
 }
 
-p {
-    line-height: 1.6;
-    color: #666;
-}
+
 
 a {
-    color: #3498db;
+    color: #bc34db;
     text-decoration: none;
     
 }
@@ -34,8 +34,8 @@ label {
 }
 a {
     text-decoration: none;
-    color: #fff;
-    text-shadow: #c82333 1px 1px 1px ;
+    color: #5105ea;
+    text-shadow: #8e23c8 1px 1px 1px ;
     padding: 12px 20px;
 }
 a :hover {
@@ -51,4 +51,7 @@ nav {
     top: 0;
     width: 100vw;
     text-shadow: #f3eded;
+}
+.addNew {
+    color: black;
 }

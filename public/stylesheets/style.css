@@ -1,9 +1,8 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: rgba(17, 24, 39, 1);
+    background-color:rgb(253, 244, 232);
     margin: 0px;
-
     padding: 0;
 }
 
@@ -111,9 +110,4 @@ footer {
     border-radius: 25px;
     border-color: white;
 
-}
-
-h1 {
-    color: #ebe8e8;
-    
 }
