@@ -42,3 +42,13 @@ a :hover {
     padding: 12px 20px;
     text-shadow: 20px 20px 60px #ff0000, -20px -20px 60px #e10303;
 } 
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    text-shadow: #f3eded;
+}

@@ -1,20 +1,16 @@
 <!-- views/index.ejs -->
 <%- include('./partials/_header.ejs') %>
     <title>Home Page</title>
-    <link rel="stylesheet" href="/stylesheets/homePage.css">
+    <!-- <link rel="stylesheet" href="/stylesheets/homePage.css"> -->
 
   </head>
   <body>
     <%- include('./partials/_navbar.ejs') %>
-
-    <h1>Welcome to the app, <%= user ? user.username : 'Guest' %><span><marquee class="imageGif" direction="down"
-    width="42"
-    height="42"
-    behavior="alternate"
-    style="border:solid">
-    <img src="https://cdn.pixabay.com/animation/2024/04/14/01/19/01-19-02-524__480.png" alt="" class="indexImg">
-</marquee>
-</span></h1> 
+    <% if (user) { %>
+      <h1>Welcome to the app, <%= user.username %></h1>
+    <% } else { %>
+      <h1>Welcome to the app , Kunayro</h1>
+    <% } %>
    
     
   </body>
