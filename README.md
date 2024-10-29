@@ -30,6 +30,33 @@
 
 <img src="planning/marckup.png">
 
+# Routes Used
+- index route 
+<img src="planning/ReadmeFiles/index.png">
+
+- new route 
+<img src="planning/ReadmeFiles/new.png">
+
+- create Route 
+<img src="planning/ReadmeFiles/create.png">
+
+- show route 
+<img src="planning/ReadmeFiles/show.png">
+
+- edit and update Route 
+<img src="planning/ReadmeFiles/edit&update.png">
+
+- delete Route 
+<img src="planning/ReadmeFiles/delete.png">
+
+
+
+  
+
+  
+  
+
+
 
 
 
