@@ -9,7 +9,6 @@ const book = require("../models/book");
 router.get("/", async (req, res) => {
   const books = await Book.find({}).populate("owner");
   res.render("books/index.ejs", { books });
-  // res.render('books/index.ejs');
 });
 //new
 router.get("/new", async (req, res) => {
@@ -23,7 +22,7 @@ router.post("/", async (req, res) => {
   res.redirect("/books");
   }
   else {
-  
+    res.send("Please enter a valid price.")
   }
 });
 
