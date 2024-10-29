@@ -6,7 +6,7 @@
    
     <%- include('../partials/_navbar.ejs') %>
 
-    <h1>Edit <%= book.title %></h1>
+    <h1 class="edit">Edit <%= book.title %></h1>
  
     <form action="/books/<%= book._id %>?_method=PUT" method="POST">
       <label for="title">Title</label>
