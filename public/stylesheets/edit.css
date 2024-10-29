@@ -23,13 +23,15 @@ p {
 }
 
 a {
-    color: #3498db;
     text-decoration: none;
+    color: #fff;
+    text-shadow: #c82333 1px 1px 1px ;
+    padding: 12px 20px;
 }
-
-a:hover {
-    text-decoration: underline;
-}
+a :hover {
+    padding: 12px 20px;
+    text-shadow: 20px 20px 60px #ff0000, -20px -20px 60px #e10303;
+} 
 
 button {
     background-color: #3498db;

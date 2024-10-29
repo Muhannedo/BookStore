@@ -26,15 +26,15 @@ p {
 }
 
 a {
-    color: #3498db;
     text-decoration: none;
-    
+    color: #fff;
+    text-shadow: #c82333 1px 1px 1px ;
+    padding: 12px 20px;
 }
-
-a:hover {
-    text-decoration: underline; 
-    text-shadow: #fff 0 0 5px;
-}
+a :hover {
+    padding: 12px 20px;
+    text-shadow: 20px 20px 60px #ff0000, -20px -20px 60px #e10303;
+} 
 
 label {
     display: block;
