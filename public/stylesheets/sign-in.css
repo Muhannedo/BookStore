@@ -1,5 +1,5 @@
-/* From Uiverse.io by Yaya12085 */ 
-*{
+/* Reset and Basic Styling */
+* {
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -7,6 +7,7 @@
   box-sizing: border-box;
   align-content: center;
 }
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: rgba(17, 24, 39, 1);
@@ -15,6 +16,18 @@ body {
   justify-content: center;
   height: 100vh;
 }
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(156, 163, 175, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  background-color: rgba(31, 41, 55, 0.8);
+}
+
 .form-container {
   width: 320px;
   border-radius: 0.75rem;
@@ -59,9 +72,8 @@ body {
 }
 
 .input-group input:focus {
-  border-color: rgba(167, 139, 250);
+  border-color: rgba(167, 139, 250, 1);
 }
-
 
 .signIN {
   width: 100%;
@@ -76,6 +88,23 @@ body {
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
+
 .signIN:hover {
   box-shadow: 20px 20px 60px #FFFFFF, -20px -20px 60px #FFFFFF;
+}
+
+.signup {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: rgba(156, 163, 175, 1);
+}
+
+.signup a {
+  color: rgba(167, 139, 250, 1);
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
 }

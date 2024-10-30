@@ -40,6 +40,10 @@
 
 <img src="planning/ReadmeFiles/landing/login.png">
 
+- sign-up page 
+<img src="planning/ReadmeFiles/landing/sign-up.png">
+
+
 - index page 
 <img src ="planning/ReadmeFiles/landing/indexx.png">
 
@@ -50,22 +54,22 @@
 
 # Routes Used
 - index route 
-<img src="planning/ReadmeFiles/index.png">
+<img src="planning/ReadmeFiles/Routes/index.png>
 
 - new route 
-<img src="planning/ReadmeFiles/new.png">
+<img src="planning/ReadmeFiles/Routes/new.png">
 
 - create Route 
-<img src="planning/ReadmeFiles/create.png">
+<img src="planning/ReadmeFiles/Routes/create.png">
 
 - show route 
 <img src="planning/ReadmeFiles/show.png">
 
 - edit and update Route 
-<img src="planning/ReadmeFiles/edit&update.png">
+<img src="planning/ReadmeFiles/Routes/edit&update.png">
 
 - delete Route 
-<img src="planning/ReadmeFiles/delete.png">
+<img src="planning/ReadmeFiles/Routes/delete.png">
 
 
 
