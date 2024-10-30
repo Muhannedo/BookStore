@@ -1,89 +1,91 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Navbar styling */
-  .navbar {
-    width: 100%;
-    background-color: #2d3436;
-    padding: 15px 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-   
-  }
-  
-  .navbar a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .navbar a:hover {
-    color: #00cec9;
-  }
-  
-  /* Main Heading for Book Title */
-  h1 {
-    font-size: 36px;
-    color: #2d3436;
-    margin: 20px 0;
-    text-align: center;
-  }
-  
-  /* Book Details Section */
-  p {
-    font-size: 18px;
-    color: #555;
-    margin: 5px 0;
-    text-align: center;
-  }
-  
-  p strong {
-    color: #2d3436;
-  }
-  
-  /* Edit and Delete Buttons */
-  a[href*="edit"],
-  button[type="submit"] {
-    display: inline-block;
-    margin: 15px 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Edit Button */
-  a[href*="edit"] {
-    background-color: #0984e3;
-  }
-  
-  a[href*="edit"]:hover {
-    background-color: #74b9ff;
-  }
-  
-  /* Delete Button */
-  button[type="submit"] {
-    background-color: #d63031;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #e17055;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 100%;
+  background-color: #2d3436;
+  padding: 15px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #00cec9;
+}
+
+/* Main Heading for Book Title */
+h1 {
+  font-size: 36px;
+  color: #00cec9;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Book Details Section */
+p {
+  font-size: 18px;
+  color: #555;
+  margin: 5px 0;
+  text-align: center;
+}
+
+p strong {
+  color: #2d3436;
+}
+
+/* Edit and Delete Buttons */
+a[href*="edit"],
+button[type="submit"] {
+  display: inline-block;
+  margin: 15px 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit Button */
+a[href*="edit"] {
+  background-color: #0984e3;
+}
+
+a[href*="edit"]:hover {
+  background-color: #74b9ff;
+}
+
+/* Delete Button */
+button[type="submit"] {
+  background-color: #d63031;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #e17055;
+}
+
+.title {
+  color: black;
+}
