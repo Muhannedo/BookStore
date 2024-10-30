@@ -1,4 +1,4 @@
-# <a href="https://bookstore-11d515fc5289.herokuapp.com/"> BookSpot </a>
+# <a href="https://bookstore-11d515fc5289.herokuapp.com/"> BookStore </a>
 
 ### 
 
