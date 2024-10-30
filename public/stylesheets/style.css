@@ -35,11 +35,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main Content Styles
-main {
-  padding: 20px;
-} */
-
 /* Book List Styles */
 .book-list {
   display: flex;
