@@ -10,8 +10,7 @@
 > The Entity Relationship Diagram descripes the Schema of this project.
 > <img src="planning/ERD.png">
 
-# User Stories 
-> [!IMPORTANT]
+# User Stories
 - As a new user, I want to easily create a new account, so I can access personalized features and services on the platform.
 - As a registered user, I want to log in to my account, so I can access my personal data and interact with the platform's features.
 - As a logged-in user, I want the ability to log out of my account, to ensure its secure when I'm not using the platform.
