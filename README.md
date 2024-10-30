@@ -77,9 +77,3 @@
 -  links to purchase the book virtualy 
 -  reviews to books
 -  the cover of the book
-
-
-
-
-
-
