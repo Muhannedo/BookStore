@@ -11,11 +11,12 @@
 > <img src="planning/ERD.png">
 
 # User Stories 
+> [!IMPORTANT]
 - As a new user, I want to easily create a new account, so I can access personalized features and services on the platform.
 - As a registered user, I want to log in to my account, so I can access my personal data and interact with the platform's features.
 - As a logged-in user, I want the ability to log out of my account, to ensure its secure when I'm not using the platform.
 - As a user, I want to list the books that I have published, to advertise them to potential buyers.
-- As a user, I want to view all the books created by every user on a single page, to explore available properties. 
+- As a user, I want to view all the books created by every user on a single page, to explore available books. 
 - As a user interested in a book, I want to have a link to get the book 
 - As a user who owns a book, I want the option to delete something I created, in case the book is no longer available.
 - As a user who owns a published book, I want to edit details of my book, to ensure the information stays up to date. 
