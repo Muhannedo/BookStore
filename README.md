@@ -56,7 +56,7 @@
 
 # Routes Used
 - index route 
-<img src="planning/ReadmeFiles/Routes/index.png>
+<img src="planning/ReadmeFiles/Routes/index.png">
 
 - new route 
 <img src="planning/ReadmeFiles/Routes/new.png">
