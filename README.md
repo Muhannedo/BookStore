@@ -73,7 +73,7 @@
 - delete Route 
 <img src="planning/ReadmeFiles/Routes/delete.png">
 
-# *** Future Work ***
+# Future Work 
 -  links to purchase the book virtualy 
 -  reviews to books
 -  the cover of the book
