@@ -1,13 +1,12 @@
-# <a href="https://bookstore-11d515fc5289.herokuapp.com/"> BookStore </a>
-
-# description
+# <a href="https://bookstore-11d515fc5289.herokuapp.com/"> BookSpot </a>
+### description
 <p>The website will give you option if sign in and sign up , only the registered users will be able to see the library and add their books , The main idea of the website is to let the user list there published books and advertise them into the website so that might have a potential buyers from this website . </p>
 
 
 
 # ERD & Data Entity Fields
 > [!IMPORTANT]
-> The Entity Relationship Diagram descripes the Schema of this project.
+> This diagram shows the structure of a database, which is a special type of computer file used to store and organize information. In this case, the database is designed to keep track of books and the people who own them.
 > <img src="planning/ERD.png">
 
 # User Stories
@@ -68,7 +67,7 @@
 <img src="planning/ReadmeFiles/Routes/create.png">
 
 - show route 
-<img src="planning/ReadmeFiles/show.png">
+<img src="/planning/ReadmeFiles/Routes/show.png">
 
 - edit and update Route 
 <img src="planning/ReadmeFiles/Routes/edit&update.png">
