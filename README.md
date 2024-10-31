@@ -1,4 +1,4 @@
-# <a href="https://bookstore-11d515fc5289.herokuapp.com/"> BookSpot </a>
+# <a href="https://bookstore-11d515fc5289.herokuapp.com/"> BookStore </a>
 
 # description
 <p>The website will give you option if sign in and sign up , only the registered users will be able to see the library and add their books , The main idea of the website is to let the user list there published books and advertise them into the website so that might have a potential buyers from this website . </p>
