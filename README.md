@@ -20,6 +20,7 @@
 - As a user who owns a book, I want the option to delete something I created, in case the book is no longer available.
 - As a user who owns a published book, I want to edit details of my book, to ensure the information stays up to date. 
 
+
 # Pseudo code
 
 - build a landing page let the user see the sign in and sign up page - 
@@ -42,7 +43,6 @@
 <img src="planning/ReadmeFiles/landing/landing-page-R.png">
 
 - sign in page 
-
 <img src="planning/ReadmeFiles/landing/login.png">
 
 - sign-up page 
